@@ -1,0 +1,13 @@
+QUERY PLAN
+|--SEARCH TABLE supplier USING INDEX supplier_idx_s_acctbal (s_acctbal>?)
+|--SEARCH TABLE nation USING INDEX nation_idx_n_nationkey_n_name (n_nationkey=?)
+`--SEARCH TABLE region USING INDEX region_idx_r_regionkey_r_name (r_regionkey=?)
+Supplier#000000001|5755.94
+Supplier#000000019|6150.38
+Supplier#000000091|6255.87
+Supplier#000000055|7162.15
+Supplier#000000008|7627.85
+Supplier#000000071|8179.68
+Supplier#000000013|9107.22
+Supplier#000000021|9365.8
+Supplier#000000049|9915.24
